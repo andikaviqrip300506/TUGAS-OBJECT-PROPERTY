@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="p"></p>
+<p id="i"></p>
+
+<script>
+    //Program 1
+var person = {
+  firstName: "Dika",
+  lastName: "Viqri",
+  id: 5566,
+};
+person.name = function() {
+  return this.firstName + " " + this.lastName;
+};
+
+document.getElementById("p").innerHTML =
+"Nama Saya Adalah " + person.name(); 
+
+    //Program 2
+ var pekerja = {
+  firstName2: "Dudung",
+  lastName2: "Muhammad",
+  id: 55686,
+};
+pekerja.name = function() {
+  return this.firstName2 + " " + this.lastName2;
+};
+
+document.getElementById("i").innerHTML =
+"Nama Pekerja " + pekerja.name(); 
+
+</script>
+
+</body>
+</html>
